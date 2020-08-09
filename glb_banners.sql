@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS "plazmid_sim_banners_glb" (
 "type"	integer NOT NULL,
 "year"	integer NOT NULL,
 "image"	varchar NOT NULL,
+"description" text DEFAULT NULL,
 "unfeatured_r_rate"	float NOT NULL DEFAULT 0,
 "featured_r_rate"	float NOT NULL DEFAULT 0,
 "unfeatured_r_count"	integer NOT NULL DEFAULT 0,
@@ -21,7 +22,19 @@ CREATE TABLE IF NOT EXISTS "plazmid_sim_banners_glb" (
 "featured" text,
 "unfeatured_gssr_rate"	float NOT NULL DEFAULT 0,
 "featured_gssr_rate"	float NOT NULL DEFAULT 0,
-"enabled" integer NOT NULL DEFAULT 1
+"enabled" integer NOT NULL DEFAULT 1,
+"unfeatured_ur_rate"	float DEFAULT 0,
+"featured_ur_rate"	float DEFAULT 0,
+"unfeatured_ur_count"	integer DEFAULT 0,
+"featured_ur_count"	integer DEFAULT 0,
+"unfeatured_lr_rate"	float DEFAULT 0,
+"featured_lr_rate"	float DEFAULT 0,
+"unfeatured_lr_count"	integer DEFAULT 0,
+"featured_lr_count"	integer DEFAULT 0,
+"unfeatured_n_rate"	float DEFAULT 0,
+"featured_n_rate"	float DEFAULT 0,
+"unfeatured_n_count"	integer DEFAULT 0,
+"featured_n_count"	integer DEFAULT 0
 );
 INSERT INTO plazmid_sim_banners_glb(id,banner_id,name,type,year,image,featured_r_rate,unfeatured_r_rate,unfeatured_r_count,featured_r_count,featured_sr_rate,unfeatured_sr_rate,unfeatured_sr_count,featured_sr_count,featured_ssr_rate,unfeatured_ssr_rate,unfeatured_ssr_count,featured_ssr_count,unfeatured,featured,unfeatured_gssr_rate,featured_gssr_rate,enabled)
 VALUES(1,52,"WT GSSR Banner",4,2017,"https://i.imgur.com/TMAgXIE.png",0.0,30.0,0,0,38.0,25.0,0,0,3.5,3.5,0,0,"2000250,2000240,2000230,2000170,1007780,1006780,1006760,1006750,1006510,1006500,1006490,1006480,1006030,1005940,1005780,1005640,1005410,1005350,1005340,1005210,1005190,1005140,1004990,1004980,1004970,1004960,1004720,1004710,1004600,1004360,1004350,1004340,1004210,1004090,1004080,1004070,1004000,1003720,1003690,1003670,1003660,1003610,1003600,1003370,1003360,1003260,1003230,1003200,1003190,1003180,1003030,1003020,1002990,1002830,1002820,1002810,1002700,1002670,1002620,1002460,1002450,1002390,1002100,1002090,1002080,1002020,1001970,1001960,1001950,1001940,1001930,1001920,1001800,1001790,1001700,1001690,1001630,1001590,1001580,1001490,1001480,1001400,1001390,1000840,1000830,1000020,1000010","1005260,1005220,1004940,1004910,1004380,1004370,1003790,1003780,1003290,1003270,1003240,1002400",0.0,0.0,1);
