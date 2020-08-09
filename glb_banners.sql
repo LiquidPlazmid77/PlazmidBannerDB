@@ -1,4 +1,4 @@
-CREATE TABLE "plazmid_sim_banners_glb" (
+CREATE TABLE IF NOT EXISTS "plazmid_sim_banners_glb" (
 "id"integer NOT NULL PRIMARY KEY AUTOINCREMENT,
 "banner_id"	integer NOT NULL,
 "name"	varchar NOT NULL,
